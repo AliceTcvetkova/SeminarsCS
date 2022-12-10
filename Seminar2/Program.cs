@@ -3,11 +3,12 @@
 // 12->2
 // 85->8
 Console.Clear();
-int number = new Random().Next(10,100);
-Console.WriteLine($"Сгенерированное число: {number}");
-int n1 = number / 10;
-int n2 = number % 10;
-if (n1>n2)
-    Console.WriteLine(n1);
+Console.WriteLine("Введите первое число: ");
+int n1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите второе число: ");
+int n2 = Convert.ToInt32(Console.ReadLine());
+int dev = n2 % n1;
+if (dev == 0)
+    Console.WriteLine("кратно");
 else
-    Console.WriteLine(n2);
+    Console.WriteLine(dev);
