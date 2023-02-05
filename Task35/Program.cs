@@ -23,6 +23,7 @@ Console.Clear();
 Console.WriteLine("Введите число: ");
 int n = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[n];
+// можно сразу задать количество без введите число int[] array = new int[123];
 InputArray(array);
 Console.WriteLine($"Начальный массив: [{string.Join(", ", array)}]");
 Console.WriteLine(ReleaseArray(array));
