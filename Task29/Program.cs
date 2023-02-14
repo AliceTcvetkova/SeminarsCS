@@ -4,4 +4,4 @@ Console.WriteLine("Введите число элементов массива: 
 int n = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите элементы массива: ");
 string[] array = Console.ReadLine().Split(", ");
-Console.WriteLine($"[{String.Join(", ",array)}]");
+Console.WriteLine($"[{string.Join(", ",array)}]");
