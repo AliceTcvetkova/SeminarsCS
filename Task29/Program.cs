@@ -1,4 +1,6 @@
-﻿internal class Program
+﻿using System.Diagnostics;
+
+internal class NewBaseType
 {
     private static void Main(string[] args)
     {
@@ -9,5 +11,14 @@
         Console.WriteLine("Введите элементы массива: ");
         string[] array = Console.ReadLine().Split(", ");
         Console.WriteLine($"[{string.Join(", ", array)}]");
+    }
+}
+
+[DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
+internal class Program : NewBaseType
+{
+    private string GetDebuggerDisplay()
+    {
+        return ToString();
     }
 }
