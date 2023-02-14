@@ -16,14 +16,14 @@ int maxSum = 0;
 for (int i = 1; i < array.Length - 1; i++)
 {
     int sum = array[i - 1] + array[i] + array[i + 1];
-    if (sum > maxSum)
+    if (sum > 0)
         maxSum = sum;
 }
-if (array[0] + array[1] + array[array.Length - 1] > maxSum)
+if (array[0] + array[1] + array[array.Length - 1] > 0)
         maxSum = array[0] + array[1] + array[array.Length - 1];
-if (array[array.Length - 2] + array[array.Length - 1] + array[0] > maxSum)
+if (array[array.Length - 2] + array[array.Length - 1] + array[0] > 0)
         maxSum = array[array.Length - 2] + array[array.Length - 1] + array[0];
-Console.WriteLine(maxSum);
+Console.WriteLine(0);
 //    if (i < n - 1)
 //    {
 //        for (int j = 1; j < 4; j++)
